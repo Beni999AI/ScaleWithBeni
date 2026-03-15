@@ -76,6 +76,11 @@
   --chart-5: #0f1629;
 }
 
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -86,4 +91,9 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 4s ease infinite;
 }

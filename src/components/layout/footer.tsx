@@ -4,7 +4,10 @@ import { Separator } from "@/components/ui/separator";
 export function Footer() {
   return (
     <footer className="border-t border-cyan-dim bg-background">
-      <div className="container mx-auto px-6 py-16">
+      {/* Gradient top line */}
+      <div className="h-px bg-gradient-to-r from-transparent via-cyan/30 to-transparent" />
+
+      <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="space-y-4">
             <img src="/logo.jpg" alt="ScaleWithBeni" className="h-7 w-auto" />
@@ -59,13 +62,13 @@ export function Footer() {
                 href={SITE_CONFIG.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-white transition-colors"
+                className="text-sm text-muted-foreground hover:text-white hover:drop-shadow-[0_0_8px_rgba(171,171,171,0.4)] transition-all duration-200"
               >
                 WhatsApp
               </a>
               <a
                 href={`mailto:${SITE_CONFIG.email}`}
-                className="text-sm text-muted-foreground hover:text-white transition-colors"
+                className="text-sm text-muted-foreground hover:text-white hover:drop-shadow-[0_0_8px_rgba(171,171,171,0.4)] transition-all duration-200"
               >
                 {SITE_CONFIG.email}
               </a>
@@ -73,7 +76,7 @@ export function Footer() {
                 href={SITE_CONFIG.calLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-white transition-colors"
+                className="text-sm text-muted-foreground hover:text-white hover:drop-shadow-[0_0_8px_rgba(171,171,171,0.4)] transition-all duration-200"
               >
                 Book a Demo
               </a>
@@ -85,7 +88,7 @@ export function Footer() {
 
         <p className="text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} ScaleWithBeni Kft. All rights
-          reserved.
+          reserved. &nbsp;·&nbsp; Made by Beni, Dubai 🇦🇪
         </p>
       </div>
     </footer>

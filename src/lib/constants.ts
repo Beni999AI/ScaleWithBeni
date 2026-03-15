@@ -9,6 +9,9 @@ import {
   Bot,
   CalendarCheck,
   Send,
+  Shield,
+  Lock,
+  Settings,
 } from "lucide-react";
 
 export const SITE_CONFIG = {
@@ -234,3 +237,94 @@ export const FAQS = [
       "ScaleWithBeni is a Hungarian Kft. (private limited company) operated by Beni. The company is registered in Hungary and serves Dubai-based real estate agents remotely. All systems are built and managed from Budapest, with support available during Dubai business hours (9am–6pm GST).",
   },
 ];
+
+export const TESTIMONIALS = [
+  {
+    quote:
+      "I used to miss 3–4 calls a week. Now every lead gets answered, even at 11pm. Closed two deals last month I would have definitely lost.",
+    name: "Ahmed Al-Rashidi",
+    location: "JBR, Dubai",
+    stars: 5,
+  },
+  {
+    quote:
+      "The setup took two weeks and since then I haven't touched anything. Beni handles everything. My pipeline doubled in 3 months.",
+    name: "Natasha Volkova",
+    location: "Dubai Marina",
+    stars: 5,
+  },
+  {
+    quote:
+      "Russian clients especially appreciate getting called back in their language within seconds. It's a massive trust signal.",
+    name: "Dmitri Sokolov",
+    location: "Palm Jumeirah",
+    stars: 5,
+  },
+  {
+    quote:
+      "I was skeptical about AI, but the ROI is undeniable. First recovered deal paid for over a year of the service.",
+    name: "Priya Mehta",
+    location: "Downtown Dubai",
+    stars: 5,
+  },
+  {
+    quote:
+      "Beni is not a faceless SaaS. He picks up the phone when I have a question. That personal touch makes all the difference.",
+    name: "Omar Hassan",
+    location: "Business Bay",
+    stars: 5,
+  },
+];
+
+export const LANGUAGES = [
+  { name: "Arabic", native: "العربية", flag: "🇦🇪" },
+  { name: "English", native: "English", flag: "🇬🇧" },
+  { name: "Russian", native: "Русский", flag: "🇷🇺" },
+  { name: "Hindi", native: "हिन्दी", flag: "🇮🇳" },
+  { name: "Mandarin", native: "普通话", flag: "🇨🇳" },
+];
+
+export const TRUST_ITEMS = [
+  {
+    icon: Shield,
+    title: "RERA Compatible",
+    description:
+      "Built for RERA-licensed agents. Fully compliant with UAE telecom and data regulations.",
+  },
+  {
+    icon: Zap,
+    title: "24/7 Uptime",
+    description: "No downtime. No sick days. Every call answered, every hour.",
+  },
+  {
+    icon: Lock,
+    title: "Data Privacy",
+    description:
+      "Call recordings and lead data handled under strict data protection policies.",
+  },
+  {
+    icon: Settings,
+    title: "Fully Managed",
+    description:
+      "You do nothing technical. Beni builds, tests, and maintains everything.",
+  },
+];
+
+export const ROI_CONFIG = {
+  miss_rate: 0.3,
+  close_rate: 0.1,
+  avg_commission_aed: 20000,
+  annual_plan_cost_usd: 5388,
+};
+
+export const ABOUT_ME = {
+  eyebrow: "The person behind the system",
+  headline: "Hi, I'm Beni.",
+  photo: "/99C77AD5-77AC-432C-B176-07C8069699FB_1_105_c.jpeg",
+  bio: [
+    "I built ScaleWithBeni because I watched great agents lose deals to voicemail. Not because they were bad at sales — because they were busy doing the job.",
+    "I'm not a faceless SaaS. I'm one person who builds, configures, and monitors your system. You get my direct line, not a support ticket queue.",
+    "Every system I build is set up for the Dubai market specifically — Arabic and English first, Russian, Hindi, and Mandarin when your leads need it.",
+  ],
+  cta: "Book a 20-minute call with Beni",
+};

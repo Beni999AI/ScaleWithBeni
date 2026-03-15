@@ -9,11 +9,13 @@ export function Services() {
   const { ref, isInView } = useIntersection();
 
   return (
-    <section id="services" className="py-20 md:py-28">
-      <div ref={ref} className="container mx-auto px-6">
+    <section id="services" className="py-16 md:py-20 lg:py-28">
+      <div ref={ref} className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
-            Everything Your Leads Need.
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter">
+            <span className="bg-gradient-to-r from-white via-cyan to-white bg-clip-text text-transparent animate-gradient-x">
+              Everything Your Leads Need.
+            </span>
             <br />
             <span className="text-cyan">Nothing You Have to Do.</span>
           </h2>
@@ -23,20 +25,24 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {SERVICES.map((service, index) => {
             const Icon = service.icon;
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group relative rounded-xl border border-cyan-dim bg-card p-8 transition-all duration-300 hover:border-cyan/40 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(0,229,255,0.08)] ${index === 0 ? "md:col-span-2" : ""}`}
+                initial={{ opacity: 0, y: 20, scale: 0.94 }}
+                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.12,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+                className="group relative rounded-xl border border-cyan-dim bg-card/50 backdrop-blur-sm p-8 transition-all duration-300 hover:border-cyan/40 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(171,171,171,0.12)]"
               >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-cyan/10">
-                    <Icon className="h-6 w-6 text-cyan" />
+                <div className="flex items-start justify-between mb-6">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-cyan/20 to-transparent border border-cyan/20 group-hover:shadow-[0_0_20px_rgba(171,171,171,0.15)] transition-shadow duration-300">
+                    <Icon className="h-7 w-7 text-cyan" />
                   </div>
                   <Badge
                     variant="secondary"
@@ -45,7 +51,7 @@ export function Services() {
                     {service.badge}
                   </Badge>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">
+                <h3 className="text-lg font-semibold text-white mb-3">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
