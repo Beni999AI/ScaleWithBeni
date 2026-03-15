@@ -15,15 +15,6 @@ import {
 import { Check, X, Plus, Info } from "lucide-react";
 import { PRICING_TIERS, SITE_CONFIG } from "@/lib/constants";
 
-const FEATURE_TOOLTIPS: Record<string, string> = {
-  "Inbound call fallback":
-    "If you don't answer within 15 seconds, the AI picks up silently and qualifies the caller.",
-  "Cal.com meeting booking":
-    "Meetings are booked directly into your Cal.com calendar — no manual steps.",
-  "Live call dashboard":
-    "Real-time dashboard showing call outcomes, lead data, and pipeline stats.",
-};
-
 export function Pricing() {
   const { ref, isInView } = useIntersection();
   const [billing, setBilling] = useState<"monthly" | "annual">("monthly");

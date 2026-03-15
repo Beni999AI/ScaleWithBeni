@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SITE_CONFIG, NAV_LINKS } from "@/lib/constants";
 import { Separator } from "@/components/ui/separator";
 
@@ -10,7 +11,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="space-y-4">
-            <img src="/logo.jpg" alt="ScaleWithBeni" className="h-7 w-auto" />
+            <Image src="/logo.jpg" alt="ScaleWithBeni" width={120} height={28} className="h-7 w-auto" />
             <p className="text-sm text-muted-foreground leading-relaxed">
               {SITE_CONFIG.tagline}
             </p>

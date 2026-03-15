@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { useIntersection } from "@/hooks/use-intersection";
 import { Button } from "@/components/ui/button";
@@ -20,11 +21,14 @@ export function AboutMe() {
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="flex justify-center lg:justify-start"
           >
-            <img
-              src={ABOUT_ME.photo}
-              alt="Beni — founder of ScaleWithBeni"
-              className="w-full max-w-sm lg:max-w-none mx-auto rounded-2xl ring-1 ring-cyan/30 shadow-[0_0_40px_rgba(171,171,171,0.10)] object-cover"
-            />
+            <div className="relative w-full max-w-sm lg:max-w-none mx-auto aspect-[4/5] rounded-2xl overflow-hidden ring-1 ring-cyan/30 shadow-[0_0_40px_rgba(171,171,171,0.10)]">
+              <Image
+                src={ABOUT_ME.photo}
+                alt="Beni — founder of ScaleWithBeni"
+                fill
+                className="object-cover"
+              />
+            </div>
           </motion.div>
 
           {/* Content */}

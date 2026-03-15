@@ -188,7 +188,7 @@ export const PremiumHero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl max-w-5xl tracking-tighter font-regular">
-            <span className="text-white">Your leads won't wait.</span>
+            <span className="text-white">Your leads won&apos;t wait.</span>
             <span className="relative flex w-full justify-center [overflow-y:clip] md:pb-4 md:pt-1">
               &nbsp;
               {aiTitles.map((title, index) => (
@@ -213,7 +213,7 @@ export const PremiumHero = () => {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-            When a lead calls your number and you can't answer, our AI picks up
+            When a lead calls your number and you can&apos;t answer, our AI picks up
             within 3 rings, qualifies them, and books a meeting directly into
             your calendar. No missed calls. No lost deals.
           </p>
