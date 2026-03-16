@@ -213,7 +213,7 @@ export const PremiumHero = () => {
           </h1>
 
           <p className="text-base md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
-            Your competition responds instantly. You don&apos;t. I build the AI systems that close that gap — fully managed, built for Dubai.
+            Your competition responds instantly. You don&apos;t. Stop losing commission with the help of AI systems  — fully managed, built for Dubai.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 flex-wrap justify-center w-full sm:w-auto">
