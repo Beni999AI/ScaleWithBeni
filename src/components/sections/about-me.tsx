@@ -6,6 +6,7 @@ import { useIntersection } from "@/hooks/use-intersection";
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 import { ABOUT_ME, SITE_CONFIG } from "@/lib/constants";
+import { TextRevealByWord } from "@/components/ui/text-reveal";
 
 export function AboutMe() {
   const { ref, isInView } = useIntersection();
@@ -46,9 +47,10 @@ export function AboutMe() {
               <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-3">
                 {ABOUT_ME.eyebrow}
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
-                {ABOUT_ME.headline}
-              </h2>
+              <TextRevealByWord
+                text={ABOUT_ME.headline}
+                className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter justify-start"
+              />
             </div>
 
             <div className="space-y-4">
