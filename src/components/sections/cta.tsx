@@ -28,14 +28,13 @@ export function CTA() {
           className="flex flex-col items-center gap-8"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter max-w-2xl">
-            <span className="text-white">Ready to </span>
+            <span className="text-white">You&apos;re leaving deals on the table. </span>
             <span className="bg-gradient-to-r from-white via-cyan to-white bg-clip-text text-transparent animate-gradient-x">
-              Never Miss a Lead
+              Let&apos;s fix that.
             </span>
-            <span className="text-white"> Again?</span>
           </h2>
           <p className="text-muted-foreground max-w-lg leading-relaxed">
-            Book a 15-minute demo. See the AI call a lead in real time.
+            Book a free 20-minute strategy call. I&apos;ll look at your current setup, identify exactly where you&apos;re losing leads, and tell you what I&apos;d build to fix it. No pitch. No commitment. Just clarity.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
@@ -44,11 +43,11 @@ export function CTA() {
               asChild
             >
               <a
-                href={SITE_CONFIG.calLink}
+                href={SITE_CONFIG.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a Demo <MoveRight className="w-4 h-4" />
+                Book a Free Strategy Call <MoveRight className="w-4 h-4" />
               </a>
             </Button>
             <Button
@@ -62,10 +61,13 @@ export function CTA() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                WhatsApp Us <MessageCircle className="w-4 h-4" />
+                Message on WhatsApp <MessageCircle className="w-4 h-4" />
               </a>
             </Button>
           </div>
+          <p className="text-sm text-muted-foreground/60">
+            20 minutes. Free. You leave knowing what&apos;s costing you deals.
+          </p>
         </motion.div>
       </div>
     </section>

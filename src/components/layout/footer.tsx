@@ -9,7 +9,7 @@ export function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-cyan/30 to-transparent" />
 
       <div className="container mx-auto px-4 md:px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="space-y-4">
             <Image src="/logo.jpg" alt="ScaleWithBeni" width={120} height={28} className="h-7 w-auto" />
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -29,6 +29,16 @@ export function Footer() {
                   {link.label}
                 </a>
               ))}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold text-white">Services</h4>
+            <div className="flex flex-col gap-2">
+              <a href="/services#voice-agent" className="text-sm text-muted-foreground hover:text-white transition-colors">AI Voice Agent</a>
+              <a href="/services#website" className="text-sm text-muted-foreground hover:text-white transition-colors">Website Design & Build</a>
+              <a href="/services#chatbot" className="text-sm text-muted-foreground hover:text-white transition-colors">AI Chatbot & Lead Agent</a>
+              <a href="/services#automation" className="text-sm text-muted-foreground hover:text-white transition-colors">Automation & Workflows</a>
             </div>
           </div>
 
@@ -74,12 +84,12 @@ export function Footer() {
                 {SITE_CONFIG.email}
               </a>
               <a
-                href={SITE_CONFIG.calLink}
+                href={SITE_CONFIG.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-white hover:drop-shadow-[0_0_8px_rgba(171,171,171,0.4)] transition-all duration-200"
               >
-                Book a Demo
+                Book a Free Call
               </a>
             </div>
           </div>
@@ -88,8 +98,7 @@ export function Footer() {
         <Separator className="my-8 bg-cyan-dim" />
 
         <p className="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} ScaleWithBeni Kft. All rights
-          reserved. &nbsp;·&nbsp; Made by Beni, Dubai 🇦🇪
+          &copy; {new Date().getFullYear()} ScaleWithBeni Kft. Registered in Hungary. &nbsp;·&nbsp; AI systems for Dubai real estate. Built and managed by Beni.
         </p>
       </div>
     </footer>

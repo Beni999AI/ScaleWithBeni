@@ -17,13 +17,12 @@ export function FAQ() {
     <section id="faq" className="py-16 md:py-20 lg:py-28 border-t border-cyan-dim">
       <div ref={ref} className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
-            Got Questions.{" "}
-            <span className="text-cyan">We&apos;ve Got Answers.</span>
-          </h2>
-          <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Everything you need to know about ScaleWithBeni.
+          <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-4">
+            Questions
           </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
+            Everything you&apos;re wondering about.
+          </h2>
         </div>
 
         <motion.div

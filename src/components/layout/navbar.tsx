@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -31,9 +33,9 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        <a href="#">
-          <img src="/logo.jpg" alt="ScaleWithBeni" className="h-6 w-auto" />
-        </a>
+        <Link href="/">
+          <Image src="/logo.jpg" alt="ScaleWithBeni" width={120} height={24} className="h-6 w-auto" />
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
@@ -53,8 +55,8 @@ export function Navbar() {
             className="bg-cyan text-black font-semibold hover:bg-cyan/90"
             asChild
           >
-            <a href={SITE_CONFIG.calLink} target="_blank" rel="noopener noreferrer">
-              Book a Demo
+            <a href={SITE_CONFIG.whatsappLink} target="_blank" rel="noopener noreferrer">
+              Book a Free Call
             </a>
           </Button>
         </div>
@@ -84,8 +86,8 @@ export function Navbar() {
                 className="bg-cyan text-black font-semibold hover:bg-cyan/90 mt-4"
                 asChild
               >
-                <a href={SITE_CONFIG.calLink} target="_blank" rel="noopener noreferrer">
-                  Book a Demo
+                <a href={SITE_CONFIG.whatsappLink} target="_blank" rel="noopener noreferrer">
+                  Book a Free Call
                 </a>
               </Button>
             </div>

@@ -48,10 +48,10 @@ export const PremiumHero = () => {
   const BEAMS_PER_LAYER = 8;
 
   const aiTitles = [
-    "Pick up within 3 rings.",
-    "Even while you're mid-showing.",
-    "Even at 3 AM.",
-    "Qualify, book, and notify you.",
+    "Not because you're a bad agent.",
+    "Because you look like you're not ready.",
+    "Because your competition moves faster.",
+    "I fix that.",
   ];
 
   useEffect(() => {
@@ -183,13 +183,13 @@ export const PremiumHero = () => {
       <div className="relative z-20 flex h-screen w-full items-center justify-center px-6 text-center">
         <div className="container mx-auto flex flex-col items-center gap-8 md:gap-12 text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-dim bg-white/5 px-4 py-1.5 text-sm text-cyan backdrop-blur-sm">
-            Built for Dubai Real Estate
+            AI Systems for Dubai Real Estate
             <MoveRight className="w-4 h-4" />
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl max-w-5xl tracking-tighter font-regular">
-            <span className="text-white">Your leads won&apos;t wait.</span>
-            <span className="relative flex w-full justify-center [overflow-y:clip] md:pb-4 md:pt-1 min-h-[5.5rem] md:min-h-0">
+            <span className="text-white">You&apos;re losing deals you should have closed.</span>
+            <span className="relative flex w-full justify-center [overflow-y:clip] md:pb-4 md:pt-1 min-h-[7rem] md:min-h-0">
               &nbsp;
               {aiTitles.map((title, index) => (
                 <motion.span
@@ -213,9 +213,7 @@ export const PremiumHero = () => {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-            When a lead calls your number and you can&apos;t answer, our AI picks up
-            within 3 rings, qualifies them, and books a meeting directly into
-            your calendar. No missed calls. No lost deals.
+            Every day, leads land on your website, call your number, or fill out a form — and leave without a response. Meanwhile, your competitor just booked that meeting. I build the AI infrastructure that closes that gap. Fully managed. Built for Dubai. No tech knowledge needed from you.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 flex-wrap justify-center">
@@ -224,16 +222,20 @@ export const PremiumHero = () => {
               className="gap-2 bg-cyan text-black font-semibold hover:bg-cyan/90"
               asChild
             >
-              <a href="https://cal.com/scalewithbeni/demo" target="_blank" rel="noopener noreferrer">
-                Book a Demo <MoveRight className="w-4 h-4" />
+              <a href="https://wa.me/36307926211" target="_blank" rel="noopener noreferrer">
+                Book a Free Strategy Call <MoveRight className="w-4 h-4" />
               </a>
             </Button>
             <Button size="lg" variant="outline" className="gap-2 border-cyan-dim text-white hover:bg-white/5" asChild>
-              <a href="#pricing">
-                See Pricing
+              <a href="/services">
+                See What I Build
               </a>
             </Button>
           </div>
+
+          <p className="text-sm text-muted-foreground/60">
+            No commitment. 20 minutes. You&apos;ll leave knowing exactly what&apos;s costing you deals.
+          </p>
         </div>
       </div>
     </div>

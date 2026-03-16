@@ -14,11 +14,14 @@ export function HowItWorks() {
     >
       <div ref={ref} className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
+          <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-4">
             How It Works
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
+            From &ldquo;I&apos;m interested&rdquo; to &ldquo;let&apos;s build it&rdquo; in 4 steps.
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            From missed call to booked meeting — in under 60 seconds.
+            No tech jargon. No long discovery calls. You&apos;ll know exactly what you&apos;re getting before anything is built.
           </p>
         </div>
 
