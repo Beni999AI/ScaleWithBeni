@@ -62,21 +62,21 @@ export const STATS = [
 export const PAIN_CARDS = [
   {
     icon: Monitor,
-    title: "Your website is losing you before you even speak.",
+    title: "Your website loses you before you even speak.",
     description:
-      "Leads search on their phone. They see your website in 3 seconds and decide if you're worth their time. An outdated, slow, or generic website doesn't say \"professional agent\" — it says \"I don't take my business seriously.\" They move on.",
+      "Leads see your site in 3 seconds and decide. Outdated or slow doesn't say \"professional\" — it says \"move on.\"",
   },
   {
     icon: PhoneMissed,
-    title: "Your response time is handing leads to your competition.",
+    title: "Your response time hands leads to your competition.",
     description:
-      "A lead who calls and gets voicemail doesn't wait. They scroll down the portal listing and call the next agent. In Dubai real estate, being second is the same as not showing up. The agent who responds first wins.",
+      "A missed call is a lost lead. In Dubai, the agent who responds first wins — always.",
   },
   {
     icon: TrendingDown,
     title: "Your follow-up is leaking money every week.",
     description:
-      "Most agents follow up once or twice, then give up. But studies show 80% of sales happen after the 5th contact. Without an automated system, your leads go cold, your pipeline stalls, and commissions disappear quietly into the noise.",
+      "80% of sales happen after the 5th contact. Most agents stop at 2, and commissions quietly disappear.",
   },
 ];
 
@@ -228,9 +228,8 @@ export const ABOUT_ME = {
   headline: "Hi, I'm Beni.",
   photo: "/99C77AD5-77AC-432C-B176-07C8069699FB_1_105_c.jpeg",
   bio: [
-    "I built ScaleWithBeni because I kept seeing the same story: great agents, losing great deals — not because they were bad at sales, but because they didn't have the infrastructure to compete.",
-    "I'm not a software company. I'm not a freelancer who disappears after delivery. I'm one person who builds, configures, monitors, and maintains your entire system. You get my direct line. Not a support ticket. Not a chatbot. Me.",
-    "Every system I build is for the Dubai real estate market specifically. I know the portals, the lead dynamics, the languages, and the legal requirements. This isn't a generic automation product with a Dubai landing page. It's built from the ground up for how you work.",
+    "I built ScaleWithBeni because great agents kept losing deals — not from bad sales skills, but from missing infrastructure.",
+    "I'm one person who builds, monitors, and maintains your entire system. You get my direct line — not a support ticket, not a chatbot. Every system is built specifically for Dubai real estate: the portals, the lead dynamics, the languages.",
   ],
   cta: "Book a 20-minute call with Beni",
 };

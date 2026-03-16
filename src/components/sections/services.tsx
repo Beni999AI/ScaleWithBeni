@@ -15,10 +15,10 @@ export function Services() {
             What I Build
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
-            The complete AI infrastructure for serious Dubai agents.
+            Four systems. Every gap closed.
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Four systems. Each one closes a gap your competition is already exploiting.
+            Each one closes a gap your competition is already exploiting.
           </p>
         </div>
 

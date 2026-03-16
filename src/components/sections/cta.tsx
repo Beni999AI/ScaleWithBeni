@@ -33,8 +33,8 @@ export function CTA() {
               Let&apos;s fix that.
             </span>
           </h2>
-          <p className="text-muted-foreground max-w-lg leading-relaxed">
-            Book a free 20-minute strategy call. I&apos;ll look at your current setup, identify exactly where you&apos;re losing leads, and tell you what I&apos;d build to fix it. No pitch. No commitment. Just clarity.
+          <p className="text-muted-foreground max-w-md leading-relaxed">
+            20 minutes. I&apos;ll identify exactly where you&apos;re losing leads and what I&apos;d build to fix it. No pitch. No commitment.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button

@@ -180,9 +180,9 @@ export const PremiumHero = () => {
       />
       <canvas ref={canvasRef} className="absolute inset-0 z-10" />
 
-      <div className="relative z-20 flex h-screen w-full items-center justify-center px-6 text-center">
-        <div className="container mx-auto flex flex-col items-center gap-8 md:gap-12 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-dim bg-white/5 px-4 py-1.5 text-sm text-cyan backdrop-blur-sm">
+      <div className="relative z-20 h-screen w-full flex flex-col items-center justify-start pt-24 md:justify-center md:pt-0 px-6 text-center">
+        <div className="container mx-auto flex flex-col items-center gap-6 md:gap-10 text-center">
+          <div className="hidden sm:inline-flex items-center gap-2 rounded-full border border-cyan-dim bg-white/5 px-4 py-1.5 text-sm text-cyan backdrop-blur-sm">
             AI Systems for Dubai Real Estate
             <MoveRight className="w-4 h-4" />
           </div>
@@ -212,11 +212,11 @@ export const PremiumHero = () => {
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-            Every day, leads land on your website, call your number, or fill out a form — and leave without a response. Meanwhile, your competitor just booked that meeting. I build the AI infrastructure that closes that gap. Fully managed. Built for Dubai. No tech knowledge needed from you.
+          <p className="text-base md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
+            Your competition responds instantly. You don&apos;t. I build the AI systems that close that gap — fully managed, built for Dubai.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 flex-wrap justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 flex-wrap justify-center w-full sm:w-auto">
             <Button
               size="lg"
               className="gap-2 bg-cyan text-black font-semibold hover:bg-cyan/90"
@@ -232,10 +232,6 @@ export const PremiumHero = () => {
               </a>
             </Button>
           </div>
-
-          <p className="text-sm text-muted-foreground/60">
-            No commitment. 20 minutes. You&apos;ll leave knowing exactly what&apos;s costing you deals.
-          </p>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export function PainAmplifier() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {PAIN_CARDS.map((card, index) => {
             const Icon = card.icon;
             return (
@@ -48,14 +48,6 @@ export function PainAmplifier() {
           })}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="text-center text-base md:text-lg font-semibold text-white max-w-3xl mx-auto leading-relaxed"
-        >
-          &ldquo;The agent who looks more prepared, responds faster, and follows up better wins — every time. Right now, that&apos;s not you. It can be.&rdquo;
-        </motion.p>
       </div>
     </section>
   );

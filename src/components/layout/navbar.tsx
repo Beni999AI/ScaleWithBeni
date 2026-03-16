@@ -67,23 +67,23 @@ export function Navbar() {
               <Menu className="h-5 w-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="bg-background border-cyan-dim">
-            <SheetHeader>
+          <SheetContent side="right" className="bg-background border-cyan-dim px-6">
+            <SheetHeader className="px-0">
               <SheetTitle className="text-white">ScaleWithBeni</SheetTitle>
             </SheetHeader>
-            <div className="flex flex-col gap-6 mt-8">
+            <div className="flex flex-col gap-6 mt-8 px-0">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="text-lg text-muted-foreground hover:text-white transition-colors"
+                  className="text-lg text-white/70 hover:text-white transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
               <Button
-                className="bg-cyan text-black font-semibold hover:bg-cyan/90 mt-4"
+                className="bg-cyan text-black font-semibold hover:bg-cyan/90 mt-4 w-full"
                 asChild
               >
                 <a href={SITE_CONFIG.whatsappLink} target="_blank" rel="noopener noreferrer">
