@@ -189,7 +189,7 @@ export const PremiumHero = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl max-w-5xl tracking-tighter font-regular">
             <span className="text-white">Your leads won&apos;t wait.</span>
-            <span className="relative flex w-full justify-center [overflow-y:clip] md:pb-4 md:pt-1 min-h-[3rem] md:min-h-0">
+            <span className="relative flex w-full justify-center [overflow-y:clip] md:pb-4 md:pt-1 min-h-[5.5rem] md:min-h-0">
               &nbsp;
               {aiTitles.map((title, index) => (
                 <motion.span
