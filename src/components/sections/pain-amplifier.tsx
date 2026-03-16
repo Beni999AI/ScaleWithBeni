@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { useIntersection } from "@/hooks/use-intersection";
 import { PAIN_CARDS } from "@/lib/constants";
+import { TextRevealByWord } from "@/components/ui/text-reveal";
 
 export function PainAmplifier() {
   const { ref, isInView } = useIntersection();
@@ -14,9 +15,10 @@ export function PainAmplifier() {
           <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-4">
             The Problem
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white max-w-2xl mx-auto">
-            While you were busy, your lead chose someone else.
-          </h2>
+          <TextRevealByWord
+            text="While you were busy, your lead chose someone else."
+            className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter max-w-2xl mx-auto"
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
