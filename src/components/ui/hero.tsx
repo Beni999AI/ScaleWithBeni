@@ -49,7 +49,7 @@ export const PremiumHero = () => {
 
   const aiTitles = [
     "Not because you're a bad agent.",
-    "Because you look like you're not ready.",
+    "Because you don't have the system needed.",
     "Because your competition moves faster.",
     "I fix that.",
   ];

@@ -3,6 +3,48 @@
 import { motion } from "motion/react";
 import { useIntersection } from "@/hooks/use-intersection";
 import { STEPS } from "@/lib/constants";
+import type { LucideIcon } from "lucide-react";
+
+interface StepMobileProps {
+  step: { icon: LucideIcon; title: string; description: string };
+  index: number;
+  isLast: boolean;
+}
+
+function StepMobile({ step, index, isLast }: StepMobileProps) {
+  const { ref, isInView } = useIntersection({ threshold: 0.3 });
+  const Icon = step.icon;
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className="flex gap-4 items-start"
+    >
+      <div className="flex flex-col items-center shrink-0">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-cyan/30 bg-card">
+          <Icon className="h-5 w-5 text-cyan" />
+        </div>
+        {!isLast && (
+          <motion.div
+            className="w-px bg-gradient-to-b from-cyan/40 to-transparent"
+            initial={{ height: 0 }}
+            animate={isInView ? { height: 40 } : {}}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          />
+        )}
+      </div>
+      <div className="pt-2 pb-8">
+        <h3 className="text-sm font-semibold text-white">{step.title}</h3>
+        <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
+          {step.description}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
 
 export function HowItWorks() {
   const { ref, isInView } = useIntersection();
@@ -91,44 +133,14 @@ export function HowItWorks() {
 
         {/* Mobile: vertical timeline */}
         <div className="md:hidden space-y-0">
-          {STEPS.map((step, index) => {
-            const Icon = step.icon;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{
-                  duration: 0.4,
-                  delay: index * 0.1,
-                  ease: [0.25, 0.46, 0.45, 0.94],
-                }}
-                className="flex gap-4 items-start"
-              >
-                <div className="flex flex-col items-center shrink-0">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-cyan/30 bg-card">
-                    <Icon className="h-5 w-5 text-cyan" />
-                  </div>
-                  {index < STEPS.length - 1 && (
-                    <motion.div
-                      className="w-px bg-gradient-to-b from-cyan/40 to-transparent"
-                      initial={{ height: 0 }}
-                      animate={isInView ? { height: 40 } : {}}
-                      transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
-                    />
-                  )}
-                </div>
-                <div className="pt-2 pb-8">
-                  <h3 className="text-sm font-semibold text-white">
-                    {step.title}
-                  </h3>
-                  <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
+          {STEPS.map((step, index) => (
+            <StepMobile
+              key={index}
+              step={step}
+              index={index}
+              isLast={index === STEPS.length - 1}
+            />
+          ))}
         </div>
       </div>
     </section>
