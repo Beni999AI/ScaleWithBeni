@@ -232,4 +232,9 @@ export const ABOUT_ME = {
     "I'm one person who builds, monitors, and maintains your entire system. You get my direct line — not a support ticket, not a chatbot. Every system is built specifically for Dubai real estate: the portals, the lead dynamics, the languages.",
   ],
   cta: "Book a 20-minute call with Beni",
+  socials: [
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/benedek-botos/" },
+    { label: "Instagram", href: "https://www.instagram.com/botos_benedek/" },
+    { label: "WhatsApp", href: "https://wa.me/36307926211" },
+  ],
 };
