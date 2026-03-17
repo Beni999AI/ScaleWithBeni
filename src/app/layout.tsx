@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ScaleWithBeni — AI Voice Agents for Dubai Real Estate",
+  title: "ScaleWithBeni — AI services for Dubai Real Estate",
   description:
     "AI calls every lead in 60 seconds, qualifies them in Arabic, English, Russian, Hindi, or Mandarin, and books a meeting in your calendar. Built for RERA-licensed agents.",
   openGraph: {
-    title: "ScaleWithBeni — AI Voice Agents for Dubai Real Estate",
+    title: "ScaleWithBeni — AI services for Dubai Real Estate",
     description:
       "AI calls every lead in 60 seconds, qualifies them in their language, and books a meeting. No leads lost. No manual calling.",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ScaleWithBeni — AI Voice Agents for Dubai Real Estate",
+    title: "ScaleWithBeni — AI services for Dubai Real Estate",
     description:
       "AI calls every lead in 60 seconds, qualifies them in their language, and books a meeting.",
   },
