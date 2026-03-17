@@ -49,7 +49,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-white text-lg font-semibold mt-8">7. Contact</h2>
             <p>
-              For privacy-related enquiries: hello@scalewithbeni.com
+              For privacy-related enquiries: botosbenedek1@gmail.com
             </p>
           </div>
         </div>
